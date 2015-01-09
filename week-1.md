@@ -5,7 +5,7 @@ Exploratory graphs: What do my data look like?
 
 #### One-Dimensional Summaries
 5-n summary: `summary(df$var)`
-boxplot: `boxplot(df$var)`    abline(v = 2, lwd = 1)
+boxplot: `boxplot(df$var)` and add `abline(v = 2, lwd = 1)`
 histogram: `hist(df$var); rug(df$var)`  
 density plot: 
 barplot:`barplot(table(df$var), col="Variable", main="Title")`
@@ -15,14 +15,14 @@ Multiple boxplot: `boxplot(var1 ~ var2, data=df, col="color")`
 Scatterplot: `with(df, plot(var1, var2)) color="factor" to add variable`
 
 #### Plotting Systems
-Base: start blank, make plot, and build up. Can't go 'back.' ex. with(df, plot(var1, var2))
+Base: start blank, make plot, and build up. Can't go 'back.' ex. `with(df, plot(var1, var2))`
 Lattice: Plot made wiht single function call. Good for many plots needed on one screen.
 Ggplot2: 
 
 ###### Base Plotting System 
 Initialize new plot. Then annotate. 
 Functions
-  plot; lines; points; text; title; axis
+  `plot; lines; points; text; title; axis`
   
   example:
   ```r
