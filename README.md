@@ -1,2 +1,2 @@
-# exploratory-analysis
+# Exploratory Analysis
 Course notes for JHU Exploratory Data Analysis 
